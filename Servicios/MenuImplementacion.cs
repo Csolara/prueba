@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace Ejercicio6OBLIGATORIO.Servicios
 {
+    /// <summary>
+    /// Clase que implementa la interfaz del menu.
+    /// csl - 180124
+    /// </summary>
     internal class MenuImplementacion : MenuInterfaz
     {
         public int menu()

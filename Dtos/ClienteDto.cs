@@ -38,5 +38,15 @@ namespace Ejercicio6OBLIGATORIO.Dtos
         {
 
         }
+        override
+        public string ToString()
+        {
+            string cliente = "idCliente:  " + this.idCliente +
+                "    nombreCliente:  " + this.nombreCliente +
+                "    apellidiosCliente:  " + this.apellidosCliente +
+                "    nombreCompletoCliente:  " + this.nombreCliente + this.apellidosCliente +
+                "    edadCliente:  " + this.edadCliente;
+            return cliente;
+        }
     }
 }

@@ -4,8 +4,17 @@ using System.Reflection.PortableExecutable;
 
 namespace Ejercicio6OBLIGATORIO.Controladores
 {
+    /// <summary>
+    /// Clase principal de la aplicacion.
+    /// csl - 180124
+    /// </summary>
     class program
     {
+        /// <summary>
+        /// Metodo principal de la aplicacion.
+        /// csl - 180124
+        /// </summary>
+        /// <param name="args"></param>
         public static void Main(string[] args)
         {
             List<ClienteDto> listaClientes = new List<ClienteDto>();
@@ -32,6 +41,7 @@ namespace Ejercicio6OBLIGATORIO.Controladores
                         break;
                     case 2:
                         Console.WriteLine("Ha seleccionado ordenar lista clientes.");
+                        ic.ordenarCliente(listaClientes);
                         break;
                     default:
                         Console.WriteLine("La opcion que ha seleccionado no coincide con ninguna");
